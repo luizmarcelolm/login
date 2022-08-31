@@ -1,10 +1,17 @@
 import react from 'react'
+import {Container, Form} from'./styles'
 
 const Login = () => {
     return (
-        <h1>
-            TELA DE LOGIN
-        </h1>
+       <Container>
+          <Form>
+            <h1> Faça seu Login </h1>
+            <div>
+                <p>Não possui conta?</p>
+                <a>Cadastrar</a>
+            </div>
+          </Form>
+       </Container>
     );
 }
 
