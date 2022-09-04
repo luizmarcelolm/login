@@ -1,4 +1,4 @@
-Projeto criado com React e reutilizando components da aplicação para criação de novas telas.
+Projeto criado com React que reutiliza components da tela de login para criação da tela de cadastro.
 
 Link do projeto.
 
