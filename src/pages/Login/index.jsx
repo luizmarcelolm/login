@@ -12,7 +12,8 @@ export const Login = () => {
     const [inputPasswordErr, setInputPasswordErr] = useState(false)
   
     
-    const validate = () => {
+    const validate = (e) => {
+        
         if (! validEmail.test(email)){
              setInputEmailErr(true)         
         } else {
@@ -23,8 +24,11 @@ export const Login = () => {
         } else {
                setInputPasswordErr(false)
             }
-    }
-    
+        if ( validPassword.test(password) &&  validEmail.test(email)){
+            return alert("Login feito com sucesso!!!") 
+        }
+        e.preventDefault()  
+    }    
     
     return(
 
@@ -44,7 +48,6 @@ export const Login = () => {
                             value = {email}
                             onChange = {e => setEmail(e.target.value)}
                             />
-                            {inputEmailErr && <p>Email inválido</p>}
                             <span className='focus-input' data-placeholder='Email'></span>
                         </div>
                         
@@ -56,9 +59,11 @@ export const Login = () => {
                             value={password}
                             onChange = {e => setPassword(e.target.value)}
                             />
-                             {inputPasswordErr && <p>Senha inválida</p>}
                             <span className='focus-input' data-placeholder='Password'></span>
                         </div>
+                        <div> {inputEmailErr && <span className="txtErr">*Email inválido.</span>}</div>
+                       
+                        <div>{inputPasswordErr && <span className="txtErr">*Senha deve ter 6 digitos contendo letra maiúscula, número e um caractere especial.</span>}</div>
                         
                         { /* criação do botão de login  */ }
                         <div className='container-login-form.btn'>
