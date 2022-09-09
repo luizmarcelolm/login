@@ -1,9 +1,13 @@
 import { AppRouter } from './routes';
 import './assets/global.css';
+import { AuthProvider } from './contexts/auth';
 
 export const App = () => {
 
   return (
-    <AppRouter />
+    <AuthProvider>
+       <AppRouter />
+    </AuthProvider>
+
   )
 }  
