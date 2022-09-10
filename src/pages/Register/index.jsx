@@ -36,11 +36,9 @@ export const Register = () => {
 
     if (res) {
       setError(res);
-      alert("./Register");
       return;
     }
-    alert("Cadastro realizado com sucesso!!!");
-    navigate("./Login");
+    navigate("./Register");
   };
 
     return(
