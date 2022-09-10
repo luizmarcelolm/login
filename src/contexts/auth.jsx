@@ -46,10 +46,8 @@ export const AuthProvider = ({ children }) => {
     const hasUser = usersStorage?.filter((user) => user.email === email);
 
     if (hasUser?.length) {
-      alert("Já tem uma conta com esse E-mail teste2"); 
-      Navigate("./Register");
-      return;
-     
+      alert("Já tem uma conta com esse E-mail"); 
+     // Navigate("./Register");
     }
 
     let newUser;
@@ -61,7 +59,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     localStorage.setItem("users_bd", JSON.stringify(newUser));
-
+     Navigate("./Register");
     return;
   };
 
