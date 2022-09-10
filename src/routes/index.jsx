@@ -9,9 +9,9 @@ export const AppRouter = () => {
        <BrowserRouter>
          <Fragment>
            <Routes>
-           <Route exact path="/home" element={<Home />} />
+           <Route   path="/home" element={<Home />} />
              <Route path="/" element={<Login />} />
-             <Route exact path="/register" element={<Register />} />
+             <Route path="/register" element={<Register />} />
              <Route path="*" element={<Login />} />
            </Routes>
          </Fragment>
