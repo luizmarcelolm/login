@@ -2,6 +2,7 @@ import { useState } from "react";
 import {LayoutComponents} from '../../components/LayoutComponents';
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import { validEmail, validPassword } from "../../utils/regex";
 
 
 export const Register = () => {
@@ -15,11 +16,23 @@ export const Register = () => {
   const { signup } = useAuth();
 
     const handleSignup = (e) => {
-     if (!email | !password | !name) {
+     if ( !email | !password | !name ) {
       setError("Preencha todos os campos");
       e.preventDefault()
       return;
-    }
+    } 
+      else if(!validEmail.test(email)){
+        setError("Campo email incorreto");
+        e.preventDefault()
+        return;
+      }
+      else if(!validPassword.test(password)){
+        setError("Campo password deve conter pelo menos 8 caracteres contendo números e letras");
+        e.preventDefault()
+        return;
+      }
+      
+    
 
     const res = signup(email, password);
 
