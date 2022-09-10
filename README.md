@@ -20,6 +20,12 @@ Para sair deverá clicar em sair.
 
 ![image](https://user-images.githubusercontent.com/109484017/189463968-6b4b00f8-b168-4834-b3fa-1d04121bbfae.png)
 
+----------------------------------------------------------------------------------------------------------------
+Para validação do cadastro foi utilizado regex, assim irá forçar o usuário a inserir email e senha contendo as expecificações determinadas.
+
+![image](https://user-images.githubusercontent.com/109484017/189488319-ed531c8c-7084-4c44-87f6-912e09e3f285.png)
+
+
 
 
 
