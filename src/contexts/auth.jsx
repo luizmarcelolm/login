@@ -46,8 +46,8 @@ export const AuthProvider = ({ children }) => {
     const hasUser = usersStorage?.filter((user) => user.email === email);
 
     if (hasUser?.length) {
-      alert("Já tem uma conta com esse E-mail teste1"); 
-      //Navigate("./Register");
+      alert("Já tem uma conta com esse E-mail teste2"); 
+      Navigate("./Register");
       return;
      
     }
