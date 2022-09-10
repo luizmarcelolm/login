@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import { Navigate } from "react-router-dom";
 
 export const AuthContext = createContext({});
 
@@ -30,11 +31,12 @@ export const AuthProvider = ({ children }) => {
         setUser({ email, password });
         return;
       } else {
-        return "E-mail ou senha incorretos";
+        alert("E-mail ou senha incorretos");
+        Navigate("./Login");
       }
     } else {
-      return "Usuário não cadastrado";
-     
+      alert("Usuário não cadastrado");
+      Navigate("./Login");
     }
   };
 
@@ -44,8 +46,8 @@ export const AuthProvider = ({ children }) => {
     const hasUser = usersStorage?.filter((user) => user.email === email);
 
     if (hasUser?.length) {
-      return  "Já tem uma conta com esse E-mail";
-      
+      alert("Já tem uma conta com esse E-mail"); 
+      Navigate("./Register");
      
     }
 

@@ -1,10 +1,9 @@
-import { useNavigate} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {LayoutComponents} from '../../components/LayoutComponents';
-import useAuth from "../../hooks/useAuth";
+
 
 export const Home = () => {
-    const { signout } = useAuth();
-    const navigate = useNavigate();
+
   
     return(
 
@@ -13,13 +12,11 @@ export const Home = () => {
                     <form className="login-form">
 
                         { /* título da tela de home  */ }
-                        <span className="login-form-title">VOCÊ ESTA LOGADO !!!</span>
+                        <span className="login-form-title2">Usuário Logado !!!</span>
               
                         { /* link para sair */ }
                         <div className='text-center'>
-                          <div Text="Sair" onClick={() => [signout(), navigate("/Home")]}>
-                             Sair
-                          </div>
+                           <Link className='txt2' to='/login'>Sair</Link>   
                         </div>
                 
                     </form>

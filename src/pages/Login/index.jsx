@@ -25,8 +25,7 @@ export const Login = () => {
         setError(res);
         return;
       }
-  
-      navigate("./Home");
+      navigate("./home")
     };
   
     
