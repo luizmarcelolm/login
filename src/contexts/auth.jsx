@@ -47,7 +47,7 @@ export const AuthProvider = ({ children }) => {
 
     if (hasUser?.length) {
       alert("Já tem uma conta com esse E-mail"); 
-     // Navigate("./Register");
+      return;
     }
 
     let newUser;
@@ -59,7 +59,6 @@ export const AuthProvider = ({ children }) => {
     }
 
     localStorage.setItem("users_bd", JSON.stringify(newUser));
-     Navigate("./Register");
     return;
   };
 
