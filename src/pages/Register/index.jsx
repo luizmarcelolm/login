@@ -38,7 +38,7 @@ export const Register = () => {
       setError(res);
       return;
     }
-
+    alert("Cadastro realizado com sucesso!!!");
     navigate("./Login");
   };
 
