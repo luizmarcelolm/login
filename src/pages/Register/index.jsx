@@ -38,7 +38,7 @@ export const Register = () => {
       setError(res);
       return;
     }
-    navigate("./Register");
+    navigate("./Login");
   };
 
     return(
