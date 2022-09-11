@@ -39,7 +39,7 @@ export const Register = () => {
         return;
       }
     
-      navigate('./Register');
+      navigate('/Register');
       return;
   };
 
