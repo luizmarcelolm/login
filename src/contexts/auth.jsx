@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import { Navigate } from "react-router-dom";
 //import { Navigate } from "react-router-dom";
 
 export const AuthContext = createContext({});
@@ -32,7 +33,8 @@ export const AuthProvider = ({ children }) => {
         setUser({ email, password });
         return;
       }   else {
-         return alert("Email ou senha incorretos");
+         Navigate('./Login');
+         return alert("Email ou senha incorretos, digite novamente.");
       }  
 
     } //else {
