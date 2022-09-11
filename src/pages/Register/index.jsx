@@ -31,8 +31,6 @@ export const Register = () => {
         e.preventDefault()
         return;
       }
-
-      alert("Cadastro feito com sucesso!!!")
     
     const res = signup(email, password);
 
