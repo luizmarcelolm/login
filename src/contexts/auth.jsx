@@ -48,7 +48,7 @@ export const AuthProvider = ({ children }) => {
 
     if (hasUser?.length) {
       //alert("Já tem uma conta com esse E-mail");  
-      return Navigate("./Login"); 
+      return;// Navigate("./Login"); 
     }
 
     let newUser;
