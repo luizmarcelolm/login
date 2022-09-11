@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { Navigate } from "react-router-dom";
+//import { Navigate } from "react-router-dom";
 
 export const AuthContext = createContext({});
 
@@ -32,11 +32,13 @@ export const AuthProvider = ({ children }) => {
         return;
       } else {
         alert("E-mail ou senha incorretos");
-        Navigate("./Login");
+        return;
+        //Navigate("./Login");
       }
     } else {
       alert("Usuário não cadastrado");
-      Navigate("./Login");
+      return;
+      //Navigate("./Login");
     }
   };
 
