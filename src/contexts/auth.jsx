@@ -33,8 +33,6 @@ export const AuthProvider = ({ children }) => {
         return;
       } else {
         setError("Email ou senha incorretos");
-        children.preventDefault();
-        Navigate("./Login");
         return;
       }
     } else {

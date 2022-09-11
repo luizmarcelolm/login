@@ -37,7 +37,7 @@ export const Login = () => {
                     <form className="login-form">
 
                         { /* título da tela de login  */ }
-                        <span className="login-form-title"> 5 SEJA BEM VINDO!</span>
+                        <span className="login-form-title"> 6 SEJA BEM VINDO!</span>
                         
                         { /* criação do input do email  */ }
                         <div className="wrap-input">
