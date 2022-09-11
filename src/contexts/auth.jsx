@@ -32,6 +32,7 @@ export const AuthProvider = ({ children }) => {
         return;
       } else {
         alert("E-mail ou senha incorretos");
+        children.preventDefault()
         return;
         //Navigate("./Login");
       }
