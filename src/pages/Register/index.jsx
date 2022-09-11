@@ -40,7 +40,7 @@ export const Register = () => {
       }
     
       navigate('./Login');
-      //return;
+      
   };
 
     return(
