@@ -5,7 +5,6 @@ export const AuthContext = createContext({});
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState();
-  const [setError] = useState("");
 
   useEffect(() => {
     const userToken = localStorage.getItem("user_token");
@@ -36,8 +35,7 @@ export const AuthProvider = ({ children }) => {
        
       }
     } else {
-      return alert("Usuário não cadastrado");
-      //Navigate("./Login");
+      return alert("Usuário não cadastrado"), Navigate("./Login");
     }
   };
 
