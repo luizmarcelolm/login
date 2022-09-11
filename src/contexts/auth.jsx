@@ -1,10 +1,11 @@
 import { createContext, useEffect, useState } from "react";
-//import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 export const AuthContext = createContext({});
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState();
+  const [setError] = useState("");
 
   useEffect(() => {
     const userToken = localStorage.getItem("user_token");
@@ -31,10 +32,10 @@ export const AuthProvider = ({ children }) => {
         setUser({ email, password });
         return;
       } else {
-        alert("E-mail ou senha incorretos");
+        setError("Email ou senha incorretos teste 3");
         children.preventDefault()
-        return;
-        //Navigate("./Login");
+        //return;
+        Navigate("./Login");
       }
     } else {
       alert("Usuário não cadastrado");
