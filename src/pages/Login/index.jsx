@@ -23,6 +23,7 @@ export const Login = () => {
   
       if (res) {
         setError(res);
+        navigate("./Login")
         return;
       }
       navigate("./Home")
@@ -37,7 +38,7 @@ export const Login = () => {
                     <form className="login-form">
 
                         { /* título da tela de login  */ }
-                        <span className="login-form-title"> 22 SEJA BEM VINDO!</span>
+                        <span className="login-form-title"> 23 SEJA BEM VINDO!</span>
                         
                         { /* criação do input do email  */ }
                         <div className="wrap-input">
