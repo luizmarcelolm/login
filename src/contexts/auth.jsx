@@ -31,16 +31,16 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem("user_token", JSON.stringify({ email, token }));
         setUser({ email, password });
         return;
-      } else {
-        alert("Email ou senha incorretos");
-        Navigate("./Login");   
-        return;    
-      }
+      }   else {
+              alert("Email ou senha incorretos");
+              Navigate("./Login");   
+              return;    
+           }
 
-    } else {
-      alert("Usuário não cadastrado");
-      Navigate("./Login");  
-      return;
+    //} else {
+     // alert("Usuário não cadastrado");
+     // Navigate("./Login");  
+      //return;
     }
   };
 
