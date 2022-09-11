@@ -25,7 +25,7 @@ export const Login = () => {
         setError(res);
         return;
       }
-      navigate("./home")
+      navigate("./Home")
     };
   
     
@@ -37,7 +37,7 @@ export const Login = () => {
                     <form className="login-form">
 
                         { /* título da tela de login  */ }
-                        <span className="login-form-title"> 16 SEJA BEM VINDO!</span>
+                        <span className="login-form-title"> 17 SEJA BEM VINDO!</span>
                         
                         { /* criação do input do email  */ }
                         <div className="wrap-input">
@@ -71,7 +71,7 @@ export const Login = () => {
                         { /* criação do link para criar conta  */ }
                         <div className='text-center'>
                             <span className='txt1'>Não possui conta?</span>
-                            <Link className='txt2' to='/register'>Criar conta</Link>
+                            <Link className='txt2' to='/Register'>Criar conta</Link>
                         </div>
                     
                     </form>

@@ -16,7 +16,7 @@ export const Home = () => {
               
                         { /* link para sair */ }
                         <div className='text-center'>
-                           <Link className='txt2' to='/login'>Sair</Link>   
+                           <Link className='txt2' to='/Login'>Sair</Link>   
                         </div>
                 
                     </form>

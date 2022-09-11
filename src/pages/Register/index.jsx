@@ -42,7 +42,7 @@ export const Register = () => {
      // return;
     
    
-      navigate('../Login');
+      navigate('./Login');
       return;
   };
 
@@ -95,7 +95,7 @@ export const Register = () => {
                         { /* criação do link para retornar a tela de login */ }
                         <div className='text-center'>
                             <span className='txt1'>Já possui conta?</span>
-                            <Link className='txt2' to='/login'>Acessar</Link>
+                            <Link className='txt2' to='/Login'>Acessar</Link>
                         </div>
             </form> 
         </LayoutComponents>
