@@ -38,6 +38,7 @@ export const AuthProvider = ({ children }) => {
 
     } else {
          alert("Usuário não cadastrado");
+         return;
       }
    
   };
