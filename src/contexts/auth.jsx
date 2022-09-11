@@ -31,11 +31,13 @@ export const AuthProvider = ({ children }) => {
         setUser({ email, password });
         return;
       } else {
-        return alert("Email ou senha incorretos"), Navigate("./Login");
-       
+        alert("Email ou senha incorretos");
+        return Navigate("./Login");       
       }
+
     } else {
-      return alert("Usuário não cadastrado"), Navigate("./Login");
+      alert("Usuário não cadastrado");
+      return Navigate("./Login");
     }
   };
 
@@ -45,7 +47,8 @@ export const AuthProvider = ({ children }) => {
     const hasUser = usersStorage?.filter((user) => user.email === email);
 
     if (hasUser?.length) {
-      alert("Já tem uma conta com esse E-mail");   
+      alert("Já tem uma conta com esse E-mail");  
+      return Navigate("./Register"); 
     }
 
     let newUser;
