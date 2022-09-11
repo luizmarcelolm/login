@@ -39,8 +39,8 @@ export const Register = () => {
       setError(res);
       return;
     }
-
-    return;
+    return e.preventDefault();
+   
    // navigate('./Login');
   };
 
