@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
         setUser({ email, password });
         return;
       } else {
-        return alert("Email ou senha incorretos");
+        return alert("Email ou senha incorretos"), Navigate("./Login");
        
       }
     } else {
