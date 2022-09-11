@@ -39,8 +39,8 @@ export const Register = () => {
         return;
       }
     
-      //navigate('./Register');
-      return;
+      navigate('./Login');
+      //return;
   };
 
     return(
