@@ -24,8 +24,9 @@ export const Login = () => {
       if (res) {
         setError(res);
         return;
-      }
+      }else{
       navigate("./Home")
+      }
     };
   
     
@@ -37,7 +38,7 @@ export const Login = () => {
                     <form className="login-form">
 
                         { /* título da tela de login  */ }
-                        <span className="login-form-title"> 33 SEJA BEM VINDO!</span>
+                        <span className="login-form-title"> 34 SEJA BEM VINDO!</span>
                         
                         { /* criação do input do email  */ }
                         <div className="wrap-input">
