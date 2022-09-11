@@ -38,11 +38,8 @@ export const Register = () => {
         setError(res);
         return;
       }
-      //e.preventDefault();
-     // return;
     
-   
-      navigate('./Login');
+      navigate('./Register');
       return;
   };
 
