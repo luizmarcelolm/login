@@ -31,12 +31,12 @@ export const AuthProvider = ({ children }) => {
         setUser({ email, password });
         return;
       } else {
-        alert("Email ou senha incorretos");
+        //alert("Email ou senha incorretos");
         return;// Navigate("./Login");       
       }
 
     } else {
-      alert("Usuário não cadastrado");
+      //alert("Usuário não cadastrado");
       return;// Navigate("./Login");
     }
   };
