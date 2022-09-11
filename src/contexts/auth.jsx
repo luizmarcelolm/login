@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-//import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 export const AuthContext = createContext({});
 
@@ -33,13 +33,14 @@ export const AuthProvider = ({ children }) => {
         return;
       }   else {
          return "Email ou senha incorretos";
-      }
-          
+      }  
 
     } else {
       return "Usuário não cadastrado";
     }
+   
   };
+  
 
   const signup = (email, password) => {
     const usersStorage = JSON.parse(localStorage.getItem("users_bd"));
@@ -59,7 +60,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     localStorage.setItem("users_bd", JSON.stringify(newUser));
-    return;
+    return Navigate('./Login');//42
   };
 
   const signout = () => {
