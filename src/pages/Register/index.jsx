@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {LayoutComponents} from '../../components/LayoutComponents';
-import { Link, useNavigate } from "react-router-dom";
+//import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import { validEmail, validPassword } from "../../utils/regex";
 
@@ -11,7 +12,7 @@ export const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const { signup } = useAuth();
 
@@ -38,7 +39,9 @@ export const Register = () => {
       setError(res);
       return;
     }
-    navigate('./Login');
+
+    return;
+   // navigate('./Login');
   };
 
     return(
