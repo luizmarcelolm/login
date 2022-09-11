@@ -34,11 +34,11 @@ export const AuthProvider = ({ children }) => {
         return;
       }   else {
          return alert("Email ou senha incorretos, digite novamente.");
-      }  
+        }  
 
-    } //else {
-      //return alert("Usuário não cadastrado");
-   // }
+    } else {
+        return alert("Usuário não cadastrado");
+      }
    
   };
   
