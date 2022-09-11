@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { Navigate } from "react-router-dom";
+//import { Navigate } from "react-router-dom";
 
 export const AuthContext = createContext({});
 
@@ -9,6 +9,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const userToken = localStorage.getItem("user_token");
     const usersStorage = localStorage.getItem("users_bd");
+    
 
     if (userToken && usersStorage) {
       const hasUser = JSON.parse(usersStorage)?.filter(
@@ -31,14 +32,12 @@ export const AuthProvider = ({ children }) => {
         setUser({ email, password });
         return;
       } else {
-        //alert("Email ou senha incorretos");
-        setError("Email ou senha incorretos");
+        alert("Email ou senha incorretos")
         return;//  Navigate("./Login");       
       }
 
     } else {
-      //alert("Usuário não cadastrado");
-      setError("Usuário não cadastrado");
+      alert("Usuário não cadastrado")
       return;// Navigate("./Login");  
     }
   };
