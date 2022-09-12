@@ -72,7 +72,7 @@ export const Login = () => {
                         { /* criação do link para criar conta  */ }
                         <div className='text-center'>
                             <span className='txt1'>Não possui conta?</span>
-                            <Link className='txt2' to='/Register'>Criar conta</Link>
+                            <Link className='txt2' to='./Register'>Criar conta</Link>
                         </div>
                     
                     </form>
