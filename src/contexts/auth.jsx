@@ -32,13 +32,13 @@ export const AuthProvider = ({ children }) => {
               return;
             }   else {
                 alert("Email ou senha incorretos");
-                return;
+               // return;
               
               }  
 
           } else {
               alert("Usuário não cadastrado");
-              return;
+             // return;
             }
       
   };
