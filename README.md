@@ -1,6 +1,6 @@
 # TELA DE LOGIN E CADASTRO
 
-Aplicação criada com React para cadastro e login do usuário utilizando localStorage para salvar informações. Os campos email e login são 
+Aplicação criada com React para cadastro e login do usuário utilizando localStorage para salvar informações. Os campos email e login são validados utilizando regex para não terem erros e segurança na criação da senha. Assim que o usuário realizar o cadastro e efetuar a senha, será direcionado para tela de "logado no sitema".
 
 Link do projeto
 https://luizmarcelolm.github.io/login/
