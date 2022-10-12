@@ -1,6 +1,9 @@
-# Aplicação React para cadastro e login do usuário utilizando localStorage para salvar informações.
+# TELA DE LOGIN E CADASTRO
 
-## Link do projeto -> https://luizmarcelolm.github.io/login/
+Aplicação criada com React para cadastro e login do usuário utilizando localStorage para salvar informações. Os campos email e login são 
+
+Link do projeto
+https://luizmarcelolm.github.io/login/
 
 1º - Usuário irá criar uma conta.
 
